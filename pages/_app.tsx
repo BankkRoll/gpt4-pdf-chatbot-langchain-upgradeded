@@ -1,6 +1,7 @@
 import '@/styles/base.css';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
+import GithubCorner from 'react-github-corner';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -13,8 +14,18 @@ function MyApp({ Component, pageProps }: AppProps) {
       <main className={inter.variable}>
         <Component {...pageProps} />
       </main>
+      {/* @ts-ignore */}
+      <GithubCorner
+        href="https://github.com/yourusername/yourrepository"
+        bannerColor="#151513"
+        octoColor="#fff"
+        size={80}
+        direction="right"
+        ariaLabel="View source on GitHub"
+      />
     </>
   );
 }
 
 export default MyApp;
+

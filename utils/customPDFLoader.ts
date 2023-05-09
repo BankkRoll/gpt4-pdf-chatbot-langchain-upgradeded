@@ -35,17 +35,26 @@ export class CustomPDFLoader extends BufferLoader {
   ): Promise<Document[]> {
     const { pdf } = await PDFLoaderImports();
     const parsed = await pdf(raw);
-    return [
-      new Document({
-        pageContent: parsed.text,
+
+    // Split the text into pages
+    const pages = parsed.text.split('\f');
+
+    // Create a Document for each page
+    const documents = pages.map((pageContent: any, index: number) => {
+      return new Document({
+        pageContent,
         metadata: {
           ...metadata,
           pdf_numpages: parsed.numpages,
+          page: index + 1, // Add the page number to the metadata
         },
-      }),
-    ];
+      });
+    });
+
+    return documents;
   }
 }
+
 
 async function PDFLoaderImports() {
   try {
