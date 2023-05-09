@@ -2,7 +2,7 @@
 
 - [x] Upgraded ui
 - [x] All errors comes directly via bot message
-- [x] PDF parse saves section for source to be found again
+- [x] PDF parse saves sections and lines info is found from for source to be found again
 - [ ] some other things coming soon. building out my skill with langchain. super clean ui here
 - [ ] coming soon..
 - [ ] coming soon...
