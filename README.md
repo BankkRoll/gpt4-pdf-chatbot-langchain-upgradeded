@@ -1,5 +1,14 @@
-
 ![screencapture-localhost-3000-2023-05-09-18_53_41](https://github.com/BankkRoll/gpt4-pdf-chatbot-langchain-upgradeded/assets/106103625/58a78cc3-e61a-47f1-9fe8-6ed2a28b48e3)
+
+- [x] Upgraded ui
+- [x] All errors comes directly via bot message
+- [x] PDF parse saves section for source to be found again
+- [ ] some other things coming soon. building out my skill with langchain. super clean ui here
+- [ ] coming soon..
+- [ ] coming soon...
+
+
+
 
 # GPT-4 & LangChain - Create a ChatGPT Chatbot for Your PDF Files
 
