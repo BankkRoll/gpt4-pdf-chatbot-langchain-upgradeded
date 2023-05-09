@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </main>
       {/* @ts-ignore */}
       <GithubCorner
-        href="https://github.com/yourusername/yourrepository"
+        href="https://github.com/BankkRoll/gpt4-pdf-chatbot-langchain-upgradeded"
         bannerColor="#151513"
         octoColor="#fff"
         size={80}
